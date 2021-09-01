@@ -2,6 +2,8 @@ html{
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     color: rgba(110, 110, 110, 0.933);
+    box-sizing: border-box;
+    overflow: auto;
 }
 
 /* HEADER */
@@ -12,6 +14,7 @@ header{
     background-color: rgb(170, 186, 206);
     color: rgb(27, 27, 27);
     position: fixed;
+    z-index: 100;
 }
 
 #logo{
@@ -50,7 +53,9 @@ nav ul, li{
 /* BANNER */
 
 #banner{
+    justify-content: center;
     width: 100%;
+    height: auto;
     background-image: linear-gradient(to right, rgb(177, 189, 201), rgb(255, 255, 255));
     display: flex;
     align-items: center;
@@ -105,6 +110,7 @@ nav ul, li{
 #main-information{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .main-information{
@@ -132,7 +138,6 @@ nav ul, li{
     margin-top: 32px;
     margin-left: 24px;
     align-items: flex-start;
-
 }
 
 .information{
@@ -156,7 +161,48 @@ nav ul, li{
     flex-direction: column;
     margin: 12px 20px;
 }
+
 /* COURSES */
+
+#learning-courses{
+    padding-top: 32px;
+    text-align: center;
+    background-color: rgb(113, 130, 146);
+    margin-top: 32px;
+}
+
+#learning-courses > h2{
+    color: rgb(255, 255, 255);
+}
+
+.courses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.course{ 
+    width: 25%;
+    height: auto;
+    display: inline-block;   
+    background-color: rgb(255, 255, 255);
+    margin: 32px;
+}
+
+.course > img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.course-content{
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 16px;
+    text-align: left;
+}
+
+
 /* THESIS */
 /* THESIS COLUMN */
 /* FOOTER */
