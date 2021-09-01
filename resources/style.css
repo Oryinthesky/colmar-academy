@@ -1,5 +1,7 @@
 html{
     font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: rgba(110, 110, 110, 0.933);
 }
 
 /* HEADER */
@@ -8,14 +10,16 @@ header{
     width: 100%;
     height: 64px;
     background-color: rgb(170, 186, 206);
+    color: rgb(27, 27, 27);
     position: fixed;
-    align-items: center;
 }
 
 #logo{
     display: inline-flex;
-    margin-left: 24px;
+    height: 64px;
+    margin: 0 24px;
     text-transform: uppercase;
+    align-items: center;
 }
 
 .logo-text{
@@ -27,6 +31,7 @@ header{
 }
 
 nav{
+    display: inline-block;
     margin: 0 24px;
     width: auto;
     position: absolute;
@@ -44,7 +49,54 @@ nav ul, li{
 
 /* BANNER */
 
+#banner{
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(177, 189, 201), rgb(255, 255, 255));
+    display: flex;
+    align-items: center;
+    padding-top: 64px;
+}
 
+.img-banner{
+    width: 50%;
+    height: auto;
+    margin: 32px 24px;
+}
+
+.banner{
+    margin-right: 18%;
+    margin-left: 20px;
+    display: block;
+    font-size: 2rem;
+    flex-wrap: wrap;   
+}
+
+.banner-button{
+    width: 100%;
+    height: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border: 2px solid rgb(113, 130, 146);
+    color: rgb(72, 80, 87);
+    padding: 8px 20px;
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+} 
+
+.banner-button:hover{
+    background-color: rgb(113, 130, 146);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.banner-button:active{
+    background-color: rgb(75, 94, 112);
+    color: rgb(255, 255, 255);
+    border: none;
+    transition: 0.2s all;
+}
 /* MAIN INFORMATION */
 /* INFORMATION COLUMN*/
 /* COURSES */
